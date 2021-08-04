@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: cd ..
-      - run: cd src
+      - run: cd src/
       - name: run-linter
         run: npx eslint .
       - run: cd ..
-      - run: cd bin
+      - run: cd bin/
       - run: npx exlint .
