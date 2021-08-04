@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: cd ..
+      - run: ls
       - name: run-linter
         run: npx eslint src/.
       - run: npx exlint bin/.
