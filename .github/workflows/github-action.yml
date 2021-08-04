@@ -1,11 +1,9 @@
-name: GitHub Actions Demo
-on: [push]
+name: brain-games
+on: push
 jobs:
-  Explore-GitHub-Actions:
+  my-job:
     runs-on: ubuntu-latest
     steps:
-      - run: cd /
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: run-linter
+        run: npx eslint ./src/.
+      - run: npx exlint ./bin/.
