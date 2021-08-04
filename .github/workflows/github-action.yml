@@ -6,4 +6,4 @@ jobs:
     steps:
       - run: cd /
       - name: run-linter
-        run: make lint
+        run: make brain-games
