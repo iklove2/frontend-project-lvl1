@@ -4,6 +4,7 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
+      - run: cd ..
       - name: run-linter
-        run: npx eslint ../src/cli.js
-      - run: npx exlint ../bin/brain-games.js
+        run: npx eslint /src/cli.js
+      - run: npx exlint /bin/brain-games.js
