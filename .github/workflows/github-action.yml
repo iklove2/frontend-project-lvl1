@@ -1,8 +1,8 @@
 name: brain-games
 on: push
 jobs:
-  my-job: run linter
+  my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: 
+      - name: run-linter
         run: npx eslint .
