@@ -5,5 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run-linter
-        run: npx eslint ./src/cli.js
-      - run: npx exlint ./bin/brain-games.js
+        run: make lint
