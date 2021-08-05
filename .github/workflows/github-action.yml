@@ -6,5 +6,4 @@ jobs:
     steps:
       - name: run-linter
         run: ./src/npx eslint .
-        shell: bash      
-      - run: ./bin/npx eslint .
+        shell: bash
