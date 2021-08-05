@@ -1,9 +1,8 @@
-name: brain-games
+name: hello-world
 on: push
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: run-linter
-        run: ./src/npx eslint .
-        shell: bash
+      - name: my-step
+        run: echo "Hello World!"
