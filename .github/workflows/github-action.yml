@@ -10,8 +10,5 @@ jobs:
       with:
         node-version: '13.x'
 
-    - name: 'install'
-      run: npm i
-
-    - name: 'test'
-      run: npm run test
+    - name: 'LINTER'
+      run: npx eslint .
