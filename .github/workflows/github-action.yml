@@ -5,5 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run-linter
-        run: ./make linter
-        shell: bash
+        run: ./src/npx eslint .
+        shell: bash      
+      - run: ./bin/npx eslint .
