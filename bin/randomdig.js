@@ -1,0 +1,1 @@
+const randdigit = Math.floor(Math.random() * 100);
